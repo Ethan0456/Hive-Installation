@@ -3,19 +3,18 @@
 **Step 1:**  Download **Hive tar.**
 
 `Command: wget [https://dlcdn.apache.org/hive/hive-4.0.0-alpha-2/apache-hive-4.0.0-alpha-2-bin.tar.gz](https://dlcdn.apache.org/hive/hive-4.0.0-alpha-2/apache-hive-4.0.0-alpha-2-bin.tar.gz)`
+![Untitled](https://user-images.githubusercontent.com/88190547/224557968-4398fb15-5060-4b21-8c1c-589cfe9bf197.png)
 
 **Step 2:**  Extract the tar file.
 
 `Command: tar -xzf apache-hive-4.0.0-alpha-2-bin.tar.gz`
-
-![Untitled](Hive-Installation%20e6ba54b6eee54d3b904eb7994a53c476/Untitled.png)
 
 **Step 3:** Edit the **“.bashrc”** file to update the environment variables for user.
 `Command:  sudo nvim .bashrc`
 
 Add the following at the end of the file:
 
-![Untitled](Hive-Installation%20e6ba54b6eee54d3b904eb7994a53c476/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/88190547/224558044-1f9366cd-249e-4461-a55d-ef3a8d342ea7.png)
 
 Run the below command to make changes work in same terminal.
 
@@ -42,8 +41,7 @@ hdfs dfs -chmod g+w /tmp`
 `Command: cd apache-hive-4.0.0-alpha-2-bin/`
 
 `Command: gedit conf/hive-env.sh`
-
-![Untitled](Hive-Installation%20e6ba54b6eee54d3b904eb7994a53c476/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/88190547/224558083-5a655aea-ef39-46ff-8619-aba9d9526bb3.png)
 
 **Step 7:** Edit hive-site.xml
 
@@ -105,11 +103,10 @@ For example, jdbc:postgresql://myhost/db?ssl=true for postgres database.
 **Step 8:** By default, Hive uses Derby database. Initialize Derby database.
 
 `Command: bin/schematool -initSchema -dbType derby`
-
-![Untitled](Hive-Installation%20e6ba54b6eee54d3b904eb7994a53c476/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/88190547/224558114-bd19d0af-c792-4296-b7b6-287c4bc8c353.png)
 
 **Step 9:** Launch Hive.
 
 **`Command:** hive`
 
-![Untitled](Hive-Installation%20e6ba54b6eee54d3b904eb7994a53c476/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/88190547/224558140-599fac74-a91f-4c4d-9fae-9423a4404aaf.png)
